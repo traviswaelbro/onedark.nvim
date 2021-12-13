@@ -40,7 +40,7 @@ function M.setup(config)
     SignColumnSB = {bg = c.bg_sidebar, fg = c.fg_gutter}, -- column where |signs| are displayed
     Substitute = {bg = c.red, fg = c.black}, -- |:substitute| replacement text highlighting
     LineNr = {
-      fg = config.transparent and c.fg_cursor_linenumber or c.fg_linenumber,
+      fg = c.fg_linenumber,
       bg = config.transparent and c.none or c.bg_linenumber
     }, -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
     CursorLineNr = {
